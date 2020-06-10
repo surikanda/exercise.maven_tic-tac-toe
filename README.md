@@ -9,7 +9,7 @@
 	* in favor of player `X`
 	* in favor of player `O`
 	* a tie
-* Ensure that all test cases in `com.github.curriculeon` pass with 100% success rate. 
+* Ensure that all test cases in `com.github.perscholas` pass with 100% success rate. 
 
 
 

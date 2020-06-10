@@ -1,4 +1,4 @@
-package com.github.curriculeon;
+package com.github.perscholas;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author leon on 6/20/18.
  */
-public class PlayerWinsColumn1Test {
+public class PlayerWinsColumn2Test {
 
     private Board board;
 
@@ -16,7 +16,7 @@ public class PlayerWinsColumn1Test {
         // Given
         this.board = new Board(new Character[][]{
                 {'X', 'O', ' '},
-                {'X', ' ', ' '},
+                {' ', 'O', ' '},
                 {'X', 'O', ' '}
         });
     }
@@ -24,7 +24,7 @@ public class PlayerWinsColumn1Test {
     @Test
     public void getWinnerTest() {
         // Given
-        String expectedWinner = "X";
+        String expectedWinner = "O";
 
         // When
         String actualWinner = board.getWinner();
@@ -38,7 +38,7 @@ public class PlayerWinsColumn1Test {
     @Test
     public void isInFavorOfPlayerOTest() {
         // Given
-        Boolean expected = false;
+        Boolean expected = true;
 
         // When
         Boolean actual = board.isInFavorOfO();
@@ -51,7 +51,7 @@ public class PlayerWinsColumn1Test {
     @Test
     public void isInFavorOfPlayerXTest() {
         // Given
-        Boolean expected = true;
+        Boolean expected = false;
 
         // When
         Boolean actual = board.isInFavorOfX();

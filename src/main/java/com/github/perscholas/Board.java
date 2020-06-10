@@ -1,4 +1,4 @@
-package com.github.curriculeon;
+package com.github.perscholas;
 
 /**
  * @author leon on 6/22/18.

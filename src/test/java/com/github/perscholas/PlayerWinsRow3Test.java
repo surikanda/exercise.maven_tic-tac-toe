@@ -1,4 +1,4 @@
-package com.github.curriculeon;
+package com.github.perscholas;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author leon on 6/20/18.
  */
-public class PlayerWinsColumn2Test {
+public class PlayerWinsRow3Test {
 
     private Board board;
 
@@ -15,9 +15,9 @@ public class PlayerWinsColumn2Test {
     public void setup() {
         // Given
         this.board = new Board(new Character[][]{
-                {'X', 'O', ' '},
-                {' ', 'O', ' '},
-                {'X', 'O', ' '}
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {'O', 'O', 'O'}
         });
     }
 
@@ -73,3 +73,4 @@ public class PlayerWinsColumn2Test {
 
     }
 }
+
